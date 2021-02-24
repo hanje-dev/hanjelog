@@ -1,0 +1,41 @@
+{
+  "name": "yata",
+  "version": "0.0.1",
+  "description": "Hanjelog SDK for reporting javascript events data in PC and mobile browser environment, and the data for measuring product metrics or A/B tests.",
+  "main": "index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "clog": "./node_modules/.bin/standard-version",
+    "demo": "node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --host 0.0.0.0 --port 7012 --progress --colors --inline --mode=none",
+    "build": "rimraf ./dist/ && NODE_ENV=production node_modules/.bin/webpack --config ./webpack.config.prod.js --progress --color --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Hanje1112/hanjelog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hanje1112/hanjelog/issues"
+  },
+  "homepage": "https://github.com/Hanje1112/hanjelog",
+  "author": "hanje",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime-corejs3": "^7.10.5",
+    "@types/ua-parser-js": "^0.7.35",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "html-webpack-plugin": "^4.3.0",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.1.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
