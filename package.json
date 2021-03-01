@@ -1,5 +1,5 @@
 {
-  "name": "yata",
+  "name": "hanjelog",
   "version": "0.0.2",
   "description": "Hanjelog SDK for reporting javascript events data in PC and mobile browser environment, and the data for measuring product metrics or A/B tests.",
   "main": "index.js",

@@ -16,7 +16,7 @@ if (fs.existsSync(path.resolve(__dirname, 'package.json'))) {
 const DIST_PATH = path.resolve(__dirname, './dist');
 
 module.exports = {
-  entry: `./src`,
+  entry: `./examples`,
   output: {
     path: DIST_PATH,
     filename: isProd ? `[name].${appVersion}.min.js` : '[name].js', // 入口js命名

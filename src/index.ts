@@ -1,3 +1,5 @@
-import { _ } from './tracking/utils';
+import { createLogInstance } from './tracking/core';
 
-console.log(_.isArray([]));
+const hanjelog = createLogInstance();
+
+export default hanjelog;
