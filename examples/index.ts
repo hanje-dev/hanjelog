@@ -6,4 +6,4 @@ hanjelog.init('FAKE_TOKEN', {
 });
 
 hanjelog.track('Registered', {}, { send_immediately: false });
- 
+
